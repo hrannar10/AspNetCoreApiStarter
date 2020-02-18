@@ -1,6 +1,11 @@
 # AspNetCoreApiStarter
 An ASP.NET Core (v2.1) Web API project to quickly bootstrap new projects.  Includes Identity, JWT authentication w/ refresh tokens.
 
+# Migrations
+dotnet ef migrations add testy3 --context AppDbContext
+dotnet ef database update --context AppDbContext
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+
 # Setup
 - Uses Sql Server Express LocalDB (If using Visual Studio install it under Individual Components in the Visual Studio installer or install separately using [this link](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb?view=sql-server-2017).
 - Apply database migrations to create the db.  From a command line within the *Web.Api.Infrastructure* project folder use the dotnet CLI to run : 
